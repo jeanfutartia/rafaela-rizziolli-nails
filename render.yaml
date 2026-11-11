@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: rafaela-rizziolli-nails
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .

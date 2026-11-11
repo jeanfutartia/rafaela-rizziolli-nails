@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rafaela Rizziolli Nails</title>
+<meta name="description" content="Rafaela Rizziolli, nail designer em Piracicaba - SP. Alongamento em fibra, banho de gel e blindagem com simetria, naturalidade e durabilidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Layout: editorial single column, arch-framed hero, hairline-ruled price menu like the printed tabela */
+:root{
+  --paper:#FAF9F6;
+  --paper-2:#F3EEE7;
+  --nude:#E9D9CC;
+  --rose:#D9B8AE;
+  --ink:#1A1A1A;
+  --ink-soft:#5C5550;
+  --line:#E4DCD2;
+  --gold:#A8834F;
+  --gold-soft:#C9A979;
+  --white:#FFFFFF;
+  --wa:#1F8F55;
+  --f-display:"Cormorant Garamond","Playfair Display",Georgia,"Times New Roman",serif;
+  --f-body:"Plus Jakarta Sans","Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:14px;
+  --shadow:0 18px 50px -24px rgba(80,55,40,.28);
+  --wrap:1160px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:500;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+.eyebrow{font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.section{padding-block:96px}
+.section-head{display:grid;gap:14px;max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(34px,5vw,52px)}
+.section-head h2 em{font-style:italic;color:var(--gold)}
+.section-head p{color:var(--ink-soft);max-width:56ch}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 13px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:17px 26px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.2,1),background .35s,color .35s,box-shadow .35s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(26,26,26,.5)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn-sm{padding:12px 18px;font-size:11.5px}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:rgba(250,249,246,.92)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(250,249,246,.86);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.logo{text-decoration:none;display:grid;line-height:1}
+.logo b{font-family:var(--f-display);font-weight:500;font-size:21px;letter-spacing:.2em}
+.logo span{font-size:9.5px;letter-spacing:.5em;color:var(--gold);margin-top:5px;font-weight:600}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:13.5px;color:var(--ink-soft);position:relative;padding:6px 0;transition:color .3s}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold);transition:right .35s}
+.nav ul a:hover{color:var(--ink)}
+.nav ul a:hover::after{right:0}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:999px;width:44px;height:44px;cursor:pointer;color:var(--ink)}
+.menu-btn svg{width:18px;height:18px}
+@media (max-width:900px){
+  .nav ul{display:none}
+  .nav .btn{display:none}
+  .menu-btn{display:grid;place-items:center}
+  .nav.open ul{display:grid;position:absolute;top:72px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:12px max(20px,env(safe-area-inset-left,0px)) 24px;gap:4px}
+  .nav.open ul a{display:block;padding:12px 0;font-size:16px;border-bottom:1px solid var(--line)}
+}
+
+/* hero */
+.hero{padding-block:56px 88px}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+.hero-copy{display:grid;gap:26px;min-width:0}
+.badge{justify-self:start;display:inline-flex;align-items:center;gap:8px;font-size:12.5px;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:var(--white);color:var(--ink-soft)}
+.badge b{color:var(--ink);font-weight:600}
+.hero h1{font-size:clamp(44px,6.6vw,84px);font-weight:400}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:17.5px;color:var(--ink-soft);max-width:48ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:28px;padding-top:22px;border-top:1px solid var(--line)}
+.hero-meta div{display:grid}
+.hero-meta strong{font-family:var(--f-display);font-size:34px;font-weight:500;line-height:1}
+.hero-meta span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px}
+.hero-art{position:relative;justify-self:end;width:100%;max-width:460px}
+.arch{aspect-ratio:4/5;max-width:100%;border-radius:240px 240px 18px 18px;background:radial-gradient(120% 80% at 50% 0%,#F6ECE4 0%,var(--nude) 55%,#DCC4B4 100%);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.arch::after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.7);border-radius:226px 226px 10px 10px;pointer-events:none}
+.arch svg{position:absolute;inset:0;width:100%;height:100%}
+.arch img{width:100%;height:100%;object-fit:cover}
+.hero-note{position:absolute;left:-28px;bottom:42px;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px 14px 14px;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;max-width:280px}
+.hero-note>div{display:grid;gap:2px}
+.hero-note .avatar{width:58px;height:58px;border-radius:50%;object-fit:cover;object-position:50% 25%;flex:none;border:2px solid var(--gold-soft)}
+.hero-note i{font-family:var(--f-display);font-size:20px;line-height:1.15}
+.hero-note small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.seal{position:absolute;right:-14px;top:22px;width:108px;height:108px;animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-art{justify-self:center;max-width:380px}
+  .hero-note{left:0}
+  .seal{right:0}
+}
+
+/* sobre */
+.about{background:var(--paper-2)}
+.about-card{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.portrait{aspect-ratio:3/4;max-width:100%;border-radius:var(--r);background:linear-gradient(160deg,#EDE1D6,#D7BFAE);position:relative;overflow:hidden;display:grid;place-items:center}
+.portrait .mono{font-family:var(--f-display);font-size:120px;font-style:italic;color:rgba(255,255,255,.85);letter-spacing:-.04em}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.portrait::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(transparent,rgba(26,26,26,.55))}
+.portrait figcaption{z-index:1}
+.portrait figcaption{position:absolute;left:16px;right:16px;bottom:16px;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--white)}
+.about-copy{display:grid;gap:22px;min-width:0}
+.about-copy h2{font-size:clamp(34px,4.6vw,50px)}
+.about-copy h2 em{font-style:italic;color:var(--gold)}
+.about-copy p{color:var(--ink-soft);max-width:58ch}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:6px}
+.pillars div{padding:18px 16px 18px 0;display:grid;gap:4px}
+.pillars div+div{padding-left:16px;border-left:1px solid var(--line)}
+.pillars b{font-family:var(--f-display);font-size:22px;font-weight:500}
+.pillars span{font-size:13px;color:var(--ink-soft);line-height:1.45}
+.signature{font-family:var(--f-display);font-style:italic;font-size:30px;color:var(--gold)}
+@media (max-width:900px){.about-card{grid-template-columns:1fr;gap:36px}.portrait{max-width:420px}}
+@media (max-width:560px){.pillars{grid-template-columns:1fr}.pillars div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+
+/* serviços */
+.tabs{display:flex;gap:6px;padding:6px;border:1px solid var(--line);border-radius:999px;background:var(--white);width:max-content;max-width:100%;overflow-x:auto;margin-bottom:32px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:500 13.5px/1 var(--f-body);padding:13px 20px;border-radius:999px;border:0;background:transparent;color:var(--ink-soft);cursor:pointer;transition:background .3s,color .3s;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.tab:not([aria-selected="true"]):hover{color:var(--ink);background:var(--paper-2)}
+.menu{display:grid;grid-template-columns:1fr 330px;gap:40px;align-items:start}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:12px 36px 28px;box-shadow:var(--shadow);min-width:0}
+.panel-title{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:22px 0 18px;border-bottom:1px solid var(--ink)}
+.panel-title h3{font-size:30px}
+.panel-title span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.item{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);transition:padding .35s}
+.item:hover{padding-left:8px}
+.item-name{min-width:0}
+.item-name b{display:block;font-weight:500;font-size:15.5px}
+.item-name small{display:block;color:var(--ink-soft);font-size:12.5px;margin-top:2px}
+.price{font-family:var(--f-display);font-size:28px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.price sup{font-family:var(--f-body);font-size:11px;letter-spacing:.08em;color:var(--ink-soft);margin-right:3px;vertical-align:.9em}
+.price.consult{font-size:17px;font-style:italic;color:var(--gold)}
+.wa-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:10px 14px;transition:border-color .3s,background .3s,color .3s}
+.wa-link svg{width:15px;height:15px}
+.wa-link:hover{border-color:var(--wa);color:var(--wa);background:#F1F8F4}
+.panel-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:24px}
+.panel-cta p{font-size:13.5px;color:var(--ink-soft)}
+.aside{display:grid;gap:16px;position:sticky;top:100px}
+.aside-card{border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:12px;background:var(--paper)}
+.aside-card h4{margin:0;font-family:var(--f-display);font-weight:500;font-size:24px;line-height:1.15}
+.aside-card p{font-size:14px;color:var(--ink-soft)}
+.aside-card.dark{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.aside-card.dark p{color:#C9C2BB}
+.aside-card.dark .btn{background:var(--paper);color:var(--ink);border-color:var(--paper);justify-self:start}
+.note-list{display:grid;gap:10px;margin:0;padding:0;list-style:none;font-size:13.5px;color:var(--ink-soft)}
+.note-list li{display:flex;gap:10px}
+.note-list li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none;margin-top:9px}
+@media (max-width:980px){.menu{grid-template-columns:1fr}.aside{position:static;grid-template-columns:1fr 1fr}}
+@media (max-width:640px){
+  .panel{padding:6px 18px 22px}
+  .item{grid-template-columns:1fr auto;gap:8px 14px}
+  .item .wa-link{grid-column:1/-1;justify-self:start}
+  .aside{grid-template-columns:1fr}
+}
+
+/* diferenciais */
+.diffs{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.diff{padding:36px 28px 40px;display:grid;gap:14px;align-content:start;transition:background .4s}
+.diff+.diff{border-left:1px solid var(--line)}
+.diff:hover{background:var(--white)}
+.diff svg{width:44px;height:44px;color:var(--gold)}
+.diff h3{font-size:25px}
+.diff p{font-size:14px;color:var(--ink-soft)}
+@media (max-width:980px){.diffs{grid-template-columns:1fr 1fr}.diff:nth-child(3){border-left:0}.diff:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:560px){.diffs{grid-template-columns:1fr}.diff+.diff{border-left:0;border-top:1px solid var(--line)}}
+
+/* galeria */
+.gallery{background:var(--paper-2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.shot{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:grid;transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+.shot:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.shot .stage{aspect-ratio:4/3;max-width:100%;display:grid;place-items:center;position:relative}
+.shot .stage svg{height:78%;width:auto;max-width:100%;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.shot:hover .stage svg{transform:scale(1.05) rotate(-2deg)}
+.shot .meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:16px 20px;border-top:1px solid var(--line)}
+.shot .meta b{font-family:var(--f-display);font-weight:500;font-size:23px}
+.shot .meta span{font-size:12px;color:var(--ink-soft)}
+.gallery-foot{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-top:32px}
+.gallery-foot p{color:var(--ink-soft);font-size:14px}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.grid{grid-template-columns:1fr}}
+
+/* faq */
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.faq{border-top:1px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;cursor:pointer;font-family:var(--f-display);font-size:24px;line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:30px;height:30px;border:1px solid var(--line);border-radius:50%;position:relative;transition:transform .35s,border-color .35s}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:1px;background:var(--ink);transform:translate(-50%,-50%)}
+.faq summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .3s}
+.faq details[open] .pm{transform:rotate(180deg);border-color:var(--gold)}
+.faq details[open] .pm::after{opacity:0}
+.faq .ans{padding:0 48px 26px 0;color:var(--ink-soft);display:grid;gap:10px}
+@media (max-width:900px){.faq-wrap{grid-template-columns:1fr;gap:20px}.faq summary{font-size:21px}.faq .ans{padding-right:0}}
+
+/* cta final */
+.final{padding-block:40px 96px}
+.final-box{border-radius:24px;background:var(--ink);color:var(--paper);padding:72px 40px;text-align:center;display:grid;justify-items:center;gap:20px;position:relative;overflow:hidden}
+.final-box::before{content:"";position:absolute;inset:16px;border:1px solid rgba(201,169,121,.35);border-radius:14px;pointer-events:none}
+.final-box h2{font-size:clamp(34px,5vw,56px);max-width:18ch}
+.final-box h2 em{font-style:italic;color:var(--gold-soft)}
+.final-box p{color:#C9C2BB;max-width:46ch}
+.final-box .btn{background:var(--paper);color:var(--ink);border-color:var(--paper);position:relative}
+@media (max-width:560px){.final-box{padding:56px 24px}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:56px 40px}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px}
+.foot h5{margin:0 0 14px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.foot p,.foot li{font-size:14px;color:var(--ink-soft)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.hours{display:grid;gap:6px;font-variant-numeric:tabular-nums}
+.hours div{display:flex;justify-content:space-between;gap:16px;font-size:14px;color:var(--ink-soft)}
+.copy{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-soft)}
+@media (max-width:900px){.foot{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot{grid-template-columns:1fr}}
+
+/* whatsapp flutuante */
+.float-wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;width:60px;height:60px;border-radius:50%;background:var(--wa);color:var(--white);display:none;place-items:center;box-shadow:0 14px 30px -10px rgba(31,143,85,.6);text-decoration:none}
+.float-wa svg{width:28px;height:28px}
+.float-wa::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--wa);opacity:.5;animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{from{transform:scale(.9);opacity:.6}to{transform:scale(1.25);opacity:0}}
+@media (max-width:900px){.float-wa{display:grid}}
+
+/* load sequence */
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.rise.d1{animation-delay:.08s}.rise.d2{animation-delay:.16s}.rise.d3{animation-delay:.24s}.rise.d4{animation-delay:.32s}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L2.9 21.2l4.6-1.2A9.2 9.2 0 1 0 12 2.8z"/><path fill="currentColor" d="M8.6 7.4c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6.3.6.9 1.3 1.5 1.8.7.6 1.3.8 1.6.9.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.4 0 .3 0 1-.4 1.5-.4.5-1.3 1-1.8 1-.5.1-1 .2-3.3-.8-2.7-1.2-4.4-4-4.5-4.2-.1-.2-1-1.4-1-2.7 0-1.2.7-1.9.8-2z"/></symbol>
+    <linearGradient id="g-nude" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3E2D6"/><stop offset="1" stop-color="#D9B9A4"/></linearGradient>
+    <linearGradient id="g-milk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDE6DE"/></linearGradient>
+    <linearGradient id="g-rose" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EBC9C1"/><stop offset="1" stop-color="#C99A8E"/></linearGradient>
+    <linearGradient id="g-champ" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2E3C8"/><stop offset=".55" stop-color="#D6B98B"/><stop offset="1" stop-color="#B8925C"/></linearGradient>
+    <linearGradient id="g-mauve" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8BDB8"/><stop offset="1" stop-color="#A9827E"/></linearGradient>
+    <linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EBCDBB"/><stop offset="1" stop-color="#DDB49C"/></linearGradient>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#topo" class="logo" aria-label="Rafaela Rizziolli Nails, início"><b>RAFAELA RIZZIOLLI</b><span>NAILS</span></a>
+    <nav aria-label="Principal">
+      <ul id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços &amp; Valores</a></li>
+        <li><a href="#procedimentos">Procedimentos</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-sm" data-wa="Olá Rafaela! Vim pelo site e gostaria de agendar um horário." href="https://wa.me/5519991416223" target="_blank" rel="noopener">Agendar Horário</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="badge rise">✨ <b>14 anos de experiência</b> em Piracicaba</span>
+        <h1 class="rise d1">Unhas com simetria, naturalidade e <em>elegância</em> que duram semanas.</h1>
+        <p class="hero-sub rise d2">Alongamento em fibra e procedimentos em gel com acabamento fino, curvatura precisa e cuidado com a saúde da sua unha natural. Você sai com unhas leves, que não parecem grossas e continuam lindas até a manutenção.</p>
+        <div class="hero-ctas rise d3">
+          <a class="btn" data-wa="Olá Rafaela! Vim pelo site e gostaria de agendar meu horário." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar meu Horário</a>
+          <a class="btn btn-ghost" href="#servicos">Ver valores</a>
+        </div>
+        <div class="hero-meta rise d4">
+          <div><strong>14</strong><span>anos de técnica</span></div>
+          <div><strong>30</strong><span>dias entre manutenções</span></div>
+          <div><strong>1:1</strong><span>atendimento exclusivo</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art rise d2">
+        <div class="arch" role="img" aria-label="Ilustração de cinco unhas amendoadas em tom nude">
+          <!-- Para usar foto real: troque o SVG abaixo por <img src="sua-foto.jpg" alt="..."> -->
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+            <g transform="translate(200 560)">
+              <g transform="rotate(-34)"><rect x="-34" y="-420" width="68" height="300" rx="34" fill="url(#g-skin)"/><path d="M-24 -300 Q0 -290 24 -300 L24 -372 Q24 -400 0 -420 Q-24 -400 -24 -372Z" fill="url(#g-nude)"/><path d="M-14 -310 Q0 -306 14 -310 Q12 -324 0 -326 Q-12 -324 -14 -310Z" fill="#fff" opacity=".35"/><path d="M-12 -360 Q-10 -395 0 -408" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".55" fill="none"/></g>
+              <g transform="rotate(-16)"><rect x="-36" y="-470" width="72" height="350" rx="36" fill="url(#g-skin)"/><path d="M-26 -350 Q0 -340 26 -350 L26 -424 Q26 -452 0 -472 Q-26 -452 -26 -424Z" fill="url(#g-nude)"/><path d="M-15 -360 Q0 -356 15 -360 Q13 -375 0 -377 Q-13 -375 -15 -360Z" fill="#fff" opacity=".35"/><path d="M-13 -410 Q-11 -446 0 -460" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".55" fill="none"/></g>
+              <g><rect x="-37" y="-490" width="74" height="370" rx="37" fill="url(#g-skin)"/><path d="M-27 -370 Q0 -360 27 -370 L27 -444 Q27 -474 0 -494 Q-27 -474 -27 -444Z" fill="url(#g-nude)"/><path d="M-16 -380 Q0 -376 16 -380 Q14 -395 0 -397 Q-14 -395 -16 -380Z" fill="#fff" opacity=".35"/><path d="M-14 -430 Q-12 -468 0 -482" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".55" fill="none"/></g>
+              <g transform="rotate(16)"><rect x="-36" y="-470" width="72" height="350" rx="36" fill="url(#g-skin)"/><path d="M-26 -350 Q0 -340 26 -350 L26 -424 Q26 -452 0 -472 Q-26 -452 -26 -424Z" fill="url(#g-nude)"/><path d="M-15 -360 Q0 -356 15 -360 Q13 -375 0 -377 Q-13 -375 -15 -360Z" fill="#fff" opacity=".35"/><path d="M-13 -410 Q-11 -446 0 -460" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".55" fill="none"/></g>
+              <g transform="rotate(34)"><rect x="-32" y="-400" width="64" height="280" rx="32" fill="url(#g-skin)"/><path d="M-22 -290 Q0 -281 22 -290 L22 -354 Q22 -380 0 -398 Q-22 -380 -22 -354Z" fill="url(#g-nude)"/><path d="M-13 -298 Q0 -294 13 -298 Q11 -311 0 -313 Q-11 -311 -13 -298Z" fill="#fff" opacity=".35"/><path d="M-11 -344 Q-9 -376 0 -388" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".55" fill="none"/></g>
+            </g>
+          </svg>
+        </div>
+        <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="circ" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+          <circle cx="60" cy="60" r="58" fill="#FAF9F6" stroke="#E4DCD2"/>
+          <text font-family="Plus Jakarta Sans, sans-serif" font-size="9.4" letter-spacing="3.2" fill="#A8834F" font-weight="600"><textPath href="#circ">GEL · FIBRA · NATURALIDADE · SIMETRIA · </textPath></text>
+          <text x="60" y="68" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="26" fill="#1A1A1A">RR</text>
+        </svg>
+        <div class="hero-note">
+          <img class="avatar" src="assets/rafaela-sobre.jpg" alt="Rafaela Rizziolli">
+          <div><small>Especialista em gel</small>
+          <i>Unhas em gel que não descolam</i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section about" id="sobre">
+    <div class="wrap about-card">
+      <figure class="portrait" style="margin:0">
+        <img src="assets/rafaela-avatar.jpg" alt="Rafaela Rizziolli sorrindo em seu espaço de atendimento, com prateleiras de esmaltes ao fundo">
+        <figcaption><span>Rafaela Rizziolli</span><span>Nail Designer</span></figcaption>
+      </figure>
+      <div class="about-copy">
+        <span class="eyebrow">Sobre a profissional</span>
+        <h2>Precisão de quem aperfeiçoa a técnica há <em>14 anos</em>.</h2>
+        <p>Sou a Rafaela, nail designer especialista em unhas de gel e alongamento em fibra. Cada atendimento é individual: avalio o formato do seu leito, a curvatura natural e a sua rotina antes de escolher o formato e a espessura ideais.</p>
+        <p>O resultado é uma unha fina, alinhada milímetro a milímetro, que respeita a lâmina natural e continua bonita por semanas. Tudo isso em um ambiente tranquilo, com materiais esterilizados e protocolo rigoroso de biossegurança.</p>
+        <div class="pillars">
+          <div><b>Personalizado</b><span>Formato e espessura pensados para a sua mão</span></div>
+          <div><b>Biossegurança</b><span>Alicates esterilizados e materiais descartáveis</span></div>
+          <div><b>Milimétrico</b><span>Simetria e ponto de tensão no lugar certo</span></div>
+        </div>
+        <span class="signature">Rafaela Rizziolli</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Serviços &amp; Investimento</span>
+        <h2>Tabela de <em>valores</em></h2>
+        <p>Escolha o serviço e toque em agendar. A mensagem já vai pronta para o WhatsApp da Rafaela.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Categorias de serviço">
+        <button class="tab" role="tab" id="t-fibra" aria-controls="p-fibra" aria-selected="true">Alongamento em Fibra</button>
+        <button class="tab" role="tab" id="t-gel" aria-controls="p-gel" aria-selected="false" tabindex="-1">Procedimentos em Gel</button>
+        <button class="tab" role="tab" id="t-outros" aria-controls="p-outros" aria-selected="false" tabindex="-1">Outros &amp; Adicionais</button>
+      </div>
+
+      <div class="menu">
+        <div>
+          <div class="panel" role="tabpanel" id="p-fibra" aria-labelledby="t-fibra">
+            <div class="panel-title"><h3>Alongamento em Fibra</h3><span>Fibra de vidro</span></div>
+            <div class="item"><div class="item-name"><b>Alongamento</b><small>Todos os formatos</small></div><div class="price"><sup>R$</sup>200</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de agendar um Alongamento em Fibra." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Manutenção</b><small>Em até 30 dias</small></div><div class="price"><sup>R$</sup>125</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de agendar uma Manutenção em Fibra." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Manutenção de outra profissional</b><small>Avaliação e correção da estrutura</small></div><div class="price"><sup>R$</sup>180</div><a class="wa-link" data-wa="Olá Rafaela! Fiz alongamento com outra profissional e gostaria de agendar uma manutenção." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Reposição de unha quebrada</b><small>Durante a manutenção</small></div><div class="price"><sup>R$</sup>10</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de incluir a reposição de unha quebrada na minha manutenção." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Reposição de unha quebrada</b><small>Fora da manutenção</small></div><div class="price"><sup>R$</sup>20</div><a class="wa-link" data-wa="Olá Rafaela! Quebrei uma unha e gostaria de agendar a reposição." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="panel-cta"><p>Square, almond, stiletto, ballerina e outros formatos pelo mesmo valor.</p><a class="btn btn-sm" data-wa="Olá Rafaela! Tenho interesse em Alongamento em Fibra e gostaria de agendar." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar Fibra</a></div>
+          </div>
+
+          <div class="panel" role="tabpanel" id="p-gel" aria-labelledby="t-gel" hidden>
+            <div class="panel-title"><h3>Procedimentos em Gel</h3><span>Unha natural</span></div>
+            <div class="item"><div class="item-name"><b>Banho de Gel</b><small>Resistência sobre a unha natural</small></div><div class="price"><sup>R$</sup>125</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de agendar um Banho de Gel." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Blindagem</b><small>Proteção fina e flexível</small></div><div class="price"><sup>R$</sup>125</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de agendar uma Blindagem." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Manutenção Banho / Blindagem</b><small>Reposição do crescimento</small></div><div class="price"><sup>R$</sup>125</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de agendar a Manutenção do meu Banho de Gel / Blindagem." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Esmaltação em Gel</b><small>Na unha natural</small></div><div class="price"><sup>R$</sup>125</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de agendar uma Esmaltação em Gel na unha natural." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="panel-cta"><p>Indicado para quem quer fortalecer a unha natural sem alongar.</p><a class="btn btn-sm" data-wa="Olá Rafaela! Tenho interesse em procedimentos em Gel e gostaria de agendar." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar Gel</a></div>
+          </div>
+
+          <div class="panel" role="tabpanel" id="p-outros" aria-labelledby="t-outros" hidden>
+            <div class="panel-title"><h3>Outros &amp; Adicionais</h3><span>Complementos</span></div>
+            <div class="item"><div class="item-name"><b>Remoção</b><small>Não inclui cutilagem e esmaltação</small></div><div class="price"><sup>R$</sup>60</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de agendar uma Remoção." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Esmaltação em Gel</b><small>No alongamento ou banho</small></div><div class="price"><sup>R$</sup>30</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de adicionar Esmaltação em Gel no meu alongamento/banho." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Troca de Formato</b><small>Na manutenção</small></div><div class="price"><sup>R$</sup>30</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de fazer uma Troca de Formato na minha manutenção." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar</a></div>
+            <div class="item"><div class="item-name"><b>Decoração / Nail Art</b><small>Valor conforme a arte</small></div><div class="price consult">Sob consulta</div><a class="wa-link" data-wa="Olá Rafaela! Gostaria de consultar valores de Decoração / Nail Art. Posso te mandar uma referência?" href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Consultar</a></div>
+            <div class="panel-cta"><p>Mande uma foto de referência da nail art para receber o orçamento.</p><a class="btn btn-sm" data-wa="Olá Rafaela! Gostaria de saber mais sobre os serviços adicionais." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Falar com a Rafaela</a></div>
+          </div>
+        </div>
+
+        <aside class="aside">
+          <div class="aside-card">
+            <h4>Antes de agendar</h4>
+            <ul class="note-list">
+              <li>A manutenção em fibra tem valor de R$ 125 até 30 dias após o procedimento.</li>
+              <li>Remoção não inclui cutilagem e esmaltação.</li>
+              <li>Nail art é orçada pela referência enviada.</li>
+            </ul>
+          </div>
+          <div class="aside-card dark">
+            <h4>Não sabe qual escolher?</h4>
+            <p>Conte como está sua unha hoje e a Rafaela indica o procedimento certo para você.</p>
+            <a class="btn btn-sm" data-wa="Olá Rafaela! Ainda não sei qual procedimento é ideal para mim. Pode me ajudar a escolher?" href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Pedir indicação</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section" style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Padrão de acabamento</span>
+        <h2>O que você <em>sente</em> na unha</h2>
+      </div>
+      <div class="diffs">
+        <article class="diff">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M16 42V18a8 8 0 0 1 16 0v24"/><path d="M12 42h24"/><path d="M20 20c0-2.5 1.8-4.5 4-4.5"/></svg>
+          <h3>Naturalidade</h3>
+          <p>Estrutura fina e leve, sem aspecto grosso ou artificial. Parece a sua unha, só que mais bonita.</p>
+        </article>
+        <article class="diff">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 4v40"/><path d="M8 30c4-10 10-14 16-14s12 4 16 14"/><circle cx="24" cy="16" r="2"/><path d="M6 36h36" stroke-dasharray="2 3"/></svg>
+          <h3>Simetria perfeita</h3>
+          <p>Curvatura C alinhada e ponto de tensão no lugar certo, dedo por dedo.</p>
+        </article>
+        <article class="diff">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="7" y="10" width="34" height="30" rx="3"/><path d="M7 18h34M15 6v8M33 6v8"/><path d="M17 29l5 5 9-10"/></svg>
+          <h3>Dura semanas</h3>
+          <p>Preparação correta da lâmina para a unha ficar firme até a manutenção, sem descolar.</p>
+        </article>
+        <article class="diff">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 23l5 5 9-10"/></svg>
+          <h3>Biossegurança</h3>
+          <p>Produtos regulamentados pela Anvisa, instrumentos esterilizados e lixas de uso individual.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section gallery" id="procedimentos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Galeria de formatos</span>
+        <h2>Encontre o seu <em>formato</em></h2>
+        <p>Todos os formatos de alongamento têm o mesmo valor. A Rafaela ajusta o comprimento e a espessura ao seu dedo.</p>
+      </div>
+      <div class="grid">
+        <figure class="shot" style="margin:0"><div class="stage" style="background:#F6EEE7"><svg viewBox="0 0 100 170" aria-hidden="true"><rect x="16" y="40" width="68" height="160" rx="30" fill="url(#g-skin)"/><path d="M24 150 Q50 160 76 150 L76 30 Q76 24 70 24 L30 24 Q24 24 24 30Z" fill="url(#g-nude)"/><path d="M34 145 Q50 150 66 145 Q63 133 50 132 Q37 133 34 145Z" fill="#fff" opacity=".35"/><path d="M33 120 L33 40" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".5"/></svg></div><figcaption class="meta"><b>Square</b><span>Nude clássico</span></figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="stage" style="background:#F4EFEA"><svg viewBox="0 0 100 170" aria-hidden="true"><rect x="16" y="40" width="68" height="160" rx="30" fill="url(#g-skin)"/><path d="M24 150 Q50 160 76 150 L76 68 Q76 30 50 8 Q24 30 24 68Z" fill="url(#g-milk)" stroke="#E7DED5"/><path d="M34 145 Q50 150 66 145 Q63 133 50 132 Q37 133 34 145Z" fill="#fff" opacity=".5"/><path d="M33 120 Q33 50 46 24" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/></svg></div><figcaption class="meta"><b>Almond</b><span>Milky white</span></figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="stage" style="background:#F5ECE9"><svg viewBox="0 0 100 170" aria-hidden="true"><rect x="16" y="40" width="68" height="160" rx="30" fill="url(#g-skin)"/><path d="M25 150 Q50 160 75 150 L73 80 Q66 40 50 2 Q34 40 27 80Z" fill="url(#g-rose)"/><path d="M34 145 Q50 150 66 145 Q63 133 50 132 Q37 133 34 145Z" fill="#fff" opacity=".3"/><path d="M34 120 Q35 60 46 22" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".5" fill="none"/></svg></div><figcaption class="meta"><b>Stiletto</b><span>Rosé</span></figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="stage" style="background:#F6F0E6"><svg viewBox="0 0 100 170" aria-hidden="true"><rect x="16" y="40" width="68" height="160" rx="30" fill="url(#g-skin)"/><path d="M24 150 Q50 160 76 150 L73 46 L64 10 L36 10 L27 46Z" fill="url(#g-champ)"/><path d="M34 145 Q50 150 66 145 Q63 133 50 132 Q37 133 34 145Z" fill="#fff" opacity=".3"/><path d="M33 120 L36 40" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".6"/></svg></div><figcaption class="meta"><b>Ballerina</b><span>Champagne</span></figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="stage" style="background:#F7F2EE"><svg viewBox="0 0 100 170" aria-hidden="true"><rect x="16" y="40" width="68" height="160" rx="30" fill="url(#g-skin)"/><path d="M24 150 Q50 160 76 150 L76 55 Q76 18 50 18 Q24 18 24 55Z" fill="url(#g-nude)"/><path d="M24 62 Q24 18 50 18 Q76 18 76 62 Q50 48 24 62Z" fill="#FFFFFF"/><path d="M34 145 Q50 150 66 145 Q63 133 50 132 Q37 133 34 145Z" fill="#fff" opacity=".35"/><path d="M33 125 L33 70" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".5"/></svg></div><figcaption class="meta"><b>Oval</b><span>Francesinha</span></figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="stage" style="background:#F3ECEA"><svg viewBox="0 0 100 170" aria-hidden="true"><rect x="16" y="40" width="68" height="160" rx="30" fill="url(#g-skin)"/><path d="M24 150 Q50 160 76 150 L76 38 Q76 22 62 22 L38 22 Q24 22 24 38Z" fill="url(#g-mauve)"/><path d="M34 145 Q50 150 66 145 Q63 133 50 132 Q37 133 34 145Z" fill="#fff" opacity=".3"/><path d="M33 120 L33 42" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".45"/></svg></div><figcaption class="meta"><b>Squoval</b><span>Mauve</span></figcaption></figure>
+      </div>
+      <div class="gallery-foot">
+        <p>Veja os trabalhos reais no Instagram da Rafaela.</p>
+        <a class="btn btn-ghost btn-sm" href="https://www.instagram.com/rafaelarizziolli_nails/" target="_blank" rel="noopener">@rafaelarizziolli_nails</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="section-head" style="margin:0">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Perguntas <em>frequentes</em></h2>
+        <p>Não encontrou sua dúvida? Chame no WhatsApp que a Rafaela responde.</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Quanto tempo dura o procedimento?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Depende do serviço. Em média, o alongamento em fibra leva de 2h30 a 3h. Manutenções, banho de gel e blindagem costumam levar cerca de 2h. O tempo exato é confirmado no agendamento.</p></div>
+        </details>
+        <details>
+          <summary>De quanto em quanto tempo devo fazer a manutenção?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="ans"><p>O ideal é a cada 3 a 4 semanas. A manutenção em fibra tem o valor de R$ 125 quando feita em até 30 dias. Depois disso a unha cresce demais, o ponto de tensão se desloca e o risco de quebra aumenta.</p></div>
+        </details>
+        <details>
+          <summary>Qual a diferença entre Banho de Gel e Blindagem?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Os dois são feitos sobre a unha natural, sem alongar. O banho de gel aplica uma camada de gel que dá mais resistência e permite corrigir pequenas imperfeições do formato. A blindagem é uma camada mais fina e flexível, pensada para proteger a unha e ajudar no crescimento.</p><p>Na avaliação, a Rafaela indica o melhor para a sua unha.</p></div>
+        </details>
+        <details>
+          <summary>Onde fica o espaço de atendimento em Piracicaba?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="ans"><p>O atendimento é em espaço próprio em Piracicaba - SP. O endereço completo é enviado pelo WhatsApp na confirmação do horário.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <div class="final-box">
+        <span class="eyebrow" style="color:var(--gold-soft)">Agenda aberta</span>
+        <h2>Suas unhas lindas <em>por semanas</em> começam aqui.</h2>
+        <p>Os horários são limitados porque cada atendimento é exclusivo. Garanta o seu.</p>
+        <a class="btn" data-wa="Olá Rafaela! Vim pelo site e gostaria de agendar meu horário." href="https://wa.me/5519991416223" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar meu Horário</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="localizacao">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#topo" class="logo"><b>RAFAELA RIZZIOLLI</b><span>NAILS</span></a>
+        <p style="margin-top:16px;max-width:32ch">Nail designer especialista em unhas de gel e alongamento em fibra. Simetria e naturalidade há 14 anos.</p>
+      </div>
+      <div>
+        <h5>Localização</h5>
+        <p>Piracicaba - SP<br>Endereço enviado na confirmação do agendamento.</p>
+      </div>
+      <div>
+        <h5>Horário</h5>
+        <div class="hours">
+          <div><span>Seg a Sex</span><span>09h – 19h</span></div>
+          <div><span>Sábado</span><span>09h – 14h</span></div>
+          <div><span>Domingo</span><span>Fechado</span></div>
+        </div>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul>
+          <li><a data-wa="Olá Rafaela! Vim pelo site." href="https://wa.me/5519991416223" target="_blank" rel="noopener">WhatsApp (19) 99141-6223</a></li>
+          <li><a href="https://www.instagram.com/rafaelarizziolli_nails/" target="_blank" rel="noopener">Instagram @rafaelarizziolli_nails</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy"><span>© 2026 Rafaela Rizziolli Nails · Piracicaba - SP</span><span>Atendimento somente com horário marcado</span></div>
+  </div>
+</footer>
+
+<a class="float-wa" data-wa="Olá Rafaela! Vim pelo site e gostaria de agendar um horário." href="https://wa.me/5519991416223" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+(function(){
+  var PHONE='5519991416223';
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    a.href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(a.getAttribute('data-wa'));
+  });
+
+  var nav=document.getElementById('nav');
+  function onScroll(){nav.classList.toggle('scrolled',window.scrollY>8)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var btn=document.getElementById('menuBtn');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+  });
+  document.querySelectorAll('#menu a').forEach(function(a){
+    a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')});
+  });
+
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function select(t){
+    tabs.forEach(function(x){
+      var on=x===t;
+      x.setAttribute('aria-selected',on);
+      x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){
+      var n=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!n)return;
+      e.preventDefault();
+      var nx=tabs[(i+n+tabs.length)%tabs.length];select(nx);nx.focus();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
